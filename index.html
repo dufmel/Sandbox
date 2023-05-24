@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- specifies document type to the browser -->
+<html lang="en">
+    <!-- Element - building block of HTML document -->
+    <!-- lang is an attribute specifying language type -->
+<head>
+    <!-- Contains all metadata -->
+    <meta charset="UTF-8">
+    <!-- Character encoding (for different alphabets) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Permits the use of HTTP methods -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Checks the viewport size -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tag that connects files together and specifies relationship -->
+    <title>HTML & CSS Basics</title>
+
+<body>
+    <!-- Contains everything displayed to the viewport -->
+    <header id="header">HTML & CSS Fundamentals</header>
+    <nav id="nav-bar">
+        <p>This is Text</p>
+        <!-- Attribute values should not have spaces -->
+        <!-- Spaces indicate more than one value -->
+        <a href="https://www.google.com" class="nav-link" target="_blank">About</a>
+        <!-- Anchor tag or link element -->
+        <a href="https://www.google.com" class="nav-link" target="_blank">Content</a>
+        <a href="https://www.google.com" class="nav-link" target="_blank">Contact</a>
+
+    </nav>
+
+    <!-- section>article.article>h1{Title}+p>strong{bold paragraph}^img -->
+    
+    <section>
+        <article class="article">
+            <h1>Title</h1>
+            <p><strong>Bold paragraph</strong></p>
+            <img src="https://images.unsplash.com/photo-1629755725339-efd38b8253bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1848&q=80" alt="Dog">
+        </article>
+    </section>
+    
+    <div class="order-of-specificty" id="order-of-specificty" style="background-color: green;">order-of-specificty</div>
+    
+    <section class="parent-element">
+        Parent box
+        <article class="child">ChildBox</article>
+    </section>
+</body>
+</html>

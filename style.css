@@ -1,0 +1,96 @@
+/* 
+    CSS - Cascading Style Sheets
+    Language that defines style and positioning of HTML Elements
+
+    Ruleset - set of rules applied to an element (see below)
+
+    Selector (element, ID, class or combination thereof) {
+        <declaration>
+        property: value;
+        property: value;
+        AKA key: value;
+    }
+*/
+/* Wildcard Selector - changes properties of EVERYTHING */
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#nav-bar {
+    background-color: #006266;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:focus {
+    color: blue;
+}
+
+.nav-link:active{
+    color:green;
+}
+
+/* Compound selector */
+body > section > article img{
+    width: 25em;
+    height: 25em;
+    object-fit: cover;
+    
+}
+
+#order-of-specificty{
+    border:2px solid black;
+    width: 1000px;
+    height:100px
+}
+
+div {
+    background-color: red !important;
+}
+
+.order-of-specificty {
+    background-color: blue;
+}
+
+#order-of-specificty{
+    background-color: purple;
+}
+
+.parent-element{
+    width: 750px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 1em;
+}
+
+.child {
+    border: 2px solid purple;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+
+/*
+    Order of Specificity
+    1. !Important
+    2. Inline style
+    3. id selector
+    4. class selector
+    5. element
+
+ */
